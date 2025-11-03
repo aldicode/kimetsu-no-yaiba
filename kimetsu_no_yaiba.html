@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kimetsu no Yaiba - Website Penggemar</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #020202;
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    .header {
+      background-color: #000;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 5px solid #ffffff;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.3em;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px #000;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+      margin-bottom: 5px;
+    }
+
+    /* LAYOUT */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto 100px;
+      background-color: #000000;
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+      border-radius: 8px;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 250px;
+      padding: 20px;
+      background-color: #000000;
+      color: #ffffff;
+      border-right: 2px solid #ffffff;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+      font-size: 1.5em;
+      text-transform: uppercase;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .sidebar ul li a:hover,
+    .sidebar ul li a.active {
+      background-color: #e9e0e0;
+      transform: translateX(5px);
+    }
+
+    /* KONTEN */
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+    }
+        
+        /* GAYA BARU UNTUK KARTU (CARD WRAPPER) */
+    .card-wrapper {
+      max-width: 600px;
+      margin: 20px auto; 
+      background-color: #0d0d0d;
+      border: 2px solid #ffffff; 
+      border-radius: 12px; 
+      overflow: hidden; 
+      box-shadow: 0 4px 25px rgb(255, 255, 255); 
+    }
+
+    .content h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 10px;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    .content img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      
+      /* Properti yang diubah/dihapus agar gambar masuk ke Card Wrapper */
+      margin: 0; 
+      border-radius: 0; 
+      box-shadow: none; 
+    }
+
+    section {
+      display: none;
+    }
+
+    /* Tampilkan section aktif */
+    #beranda:target,
+    #informasi:target,
+    #kontak:target,
+    #berita:target {
+      display: block;
+    }
+
+    /* Default halaman awal */
+    #beranda {
+      display: block;
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: #000;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 5px solid #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <img src="a.jpg" alt="Logo Demon Slayer" class="logo">
+    <h1>Pemburu Iblis</h1>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#informasi">Informasi</a></li>
+        <li><a href="#berita">Berita Terkini</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+            <section id="beranda">
+        <h2>Selamat Datang ⚔️</h2>
+        <p><strong>Kimetsu no Yaiba</strong> adalah kisah perjuangan <strong>Tanjiro Kamado</strong> melawan kegelapan untuk melindungi adiknya, <strong>Nezuko</strong>, yang berubah menjadi iblis.</p>
+        <p>Di situs ini, kamu bisa menjelajahi informasi menarik, fakta, dan berita terbaru tentang dunia para pemburu iblis.🔥</p>
+        
+                <div class="card-wrapper">
+                    <img src="World Tour│.jpg" alt="Gambar Demon Slayer">
+                </div>
+                
+      </section>
+
+<section id="informasi">
+        <h2>Informasi Tentang Kimetsu no Yaiba ⚔️</h2>
+        <p><strong>Kimetsu no Yaiba</strong> menceritakan kisah <strong>Tanjiro Kamado</strong>, seorang pemuda berhati baik yang hidup damai bersama keluarganya hingga tragedi menimpa mereka.</p>
+        <p>Setelah keluarganya dibantai oleh iblis dan adiknya <strong>Nezuko</strong> berubah menjadi iblis, Tanjiro bertekad menjadi pemburu iblis demi menemukan cara untuk mengembalikannya menjadi manusia.</p>
+        <p>Dengan bimbingan para <em>Hashira</em>, Tanjiro mempelajari teknik pernapasan yang luar biasa dan melawan kegelapan dengan cahaya keberanian. 🌸</p>
+      </section>
+
+            <section id="berita">
+        <h2>Berita Terkini Demon Slayer 🔥</h2>
+        <p><strong>Season 4 Kimetsu no Yaiba</strong> resmi diumumkan akan tayang pada tahun <strong>2025</strong>! Arc yang diadaptasi kali ini adalah <em>Hashira Training Arc</em>.</p>
+        <p>Para Hashira akan melatih para pemburu iblis muda untuk mempersiapkan pertempuran besar melawan <strong>Muzan Kibutsuji</strong> dan pasukan iblis terkuatnya.</p>
+        <p>Studio <strong>Ufotable</strong> menjanjikan animasi yang lebih menakjubkan dari musim sebelumnya. Jangan lewatkan pertarungan epik yang akan menentukan nasib dunia para pemburu iblis! ⚔️🔥</p>
+      </section>
+
+            <section id="kontak">
+        <h2>Hubungi Kami 📩</h2>
+        <p>Ingin bergabung dengan komunitas penggemar Demon Slayer?</p>
+        <p>Email: <strong>kimetsu_fans@gmail.com</strong><br>
+        Instagram: <strong>@KimetsuFansID</strong></p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 - Karya Penggemar Kimetsu no Yaiba | Semua hak cipta dilindungi oleh Koyoharu Gotouge
+  </footer>
+</body>
+</html>
